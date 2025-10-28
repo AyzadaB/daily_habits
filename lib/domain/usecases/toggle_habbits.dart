@@ -1,0 +1,12 @@
+import 'package:daily_habits/domain/entities/habit_entity.dart';
+import 'package:daily_habits/domain/repositories/habit_repository.dart';
+
+class ToggleHabbitsUseCase {
+  final HabitRepository repository;
+
+  ToggleHabbitsUseCase(this.repository);
+
+  Future<void> call(int id) async {
+    repository.toggleHabit(id);
+  }
+}
