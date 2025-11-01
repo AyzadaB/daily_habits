@@ -1,10 +1,10 @@
 import 'package:daily_habits/domain/entities/habit_entity.dart';
 import 'package:daily_habits/domain/repositories/habit_repository.dart';
 
-class GetHabbitsUseCase {
+class GetHabitsUseCase {
   final HabitRepository repository;
 
-  GetHabbitsUseCase(this.repository);
+  GetHabitsUseCase(this.repository);
 
   List<HabitEntity> call() {
     return repository.getHabits();

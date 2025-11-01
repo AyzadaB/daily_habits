@@ -13,3 +13,5 @@ class HabitEntity {
     required this.createdDate,
   });
 }
+
+//HabitEntity — это чистая модель без зависимостей (слой domain).
