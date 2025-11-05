@@ -1,9 +1,9 @@
 import 'package:daily_habits/domain/repositories/habit_repository.dart';
 
-class ToggleHabitsUseCase {
+class DeleteHabitsUseCase {
   final HabitRepository repository;
 
-  ToggleHabitsUseCase(this.repository);
+  DeleteHabitsUseCase(this.repository);
 
   Future<void> call(int id) async {
     repository.deleteHabit(id);
